@@ -1,0 +1,9 @@
+@media screen and (max-width: 700px) {
+  body #widgets-content {
+    -ms-grid-columns: 100% !important;
+        grid-template-columns: 100% !important;
+    -ms-grid-rows: 15% 25% 25% 25% 5% !important;
+        grid-template-rows: 15% 25% 25% 25% 5% !important;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */

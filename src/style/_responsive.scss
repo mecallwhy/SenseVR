@@ -1,0 +1,99 @@
+@media screen and (max-width: 700px){
+    $widgetHight: 50vw;
+
+    body{
+      #widgets-content{
+        grid-template-columns: 100% !important;
+        grid-template-rows: 15vh $widgetHight $widgetHight $widgetHight !important;
+        row-gap: $widgetHight*.15;
+        
+        #widget-weather-main{
+  
+          #weather-data{
+  
+            #weather-cityName{
+              font-size: $widgetHight/9 !important;
+            }
+            #weather-temps-container{
+              width: $widgetHight/3 !important;
+
+              #weather-temperature{
+                font-size: $widgetHight/5 !important;
+                bottom: 15px !important
+              }
+              #weather-feelsLike{
+                font-size: $widgetHight/15 !important;
+                bottom: 23px !important;
+              }
+            }
+            #weather-description{
+              font-size: $widgetHight/13 !important;
+            }
+            #weather-details{
+              font-size: $widgetHight/13 !important;
+            }
+          }
+        }
+        #extraWidget-1{
+          grid-column: 1/2 !important;
+          grid-row: 2/3 !important;
+        }
+        #extraWidget-2{
+          grid-column: 1/2 !important;
+          grid-row: 3/4 !important;
+        }
+        #extraWidget-3{
+          grid-column: 1/2 !important;
+          grid-row: 4/5 !important;
+        }
+        .widget-weather-extra{
+          height: $widgetHight !important;
+          width: $widgetHight !important;
+
+          #weather-data{
+            height: $widgetHight !important;
+            width: $widgetHight !important;
+
+            #weather-temperature{
+              font-size: $widgetHight/3.5 !important;
+            }
+            
+            #weather-feelsLike{
+              font-size: $widgetHight/12 !important;
+            }
+            
+            #weather-units{
+              font-size: $widgetHight/16 !important;
+            }
+            #weather-description{
+              font-size: $widgetHight/15 !important;
+            }
+            
+            #weather-details{
+              font-size: $widgetHight/17 !important;
+            }
+            
+            #weather-cityName{
+              font-size: $widgetHight/15 !important;
+            }
+            
+            #widget-search{
+              input{
+                font-size: $widgetHight/15 !important;
+                max-height: $widgetHight/10 !important;
+              }
+              
+              img{
+                height: $widgetHight/9 !important;
+              }
+              
+              button{
+                height: $widgetHight/10 !important;
+                width: $widgetHight/10 !important;
+              }
+            } 
+          }
+        }
+      }
+    }
+}
